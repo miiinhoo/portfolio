@@ -18,7 +18,7 @@ a:hover{text-decoration: none;}
 html{scroll-behavior: smooth;}
 .overlay{
   width: 100%;height: 100vh;
-  background: url(/img/overlay.gif) repeat 0 0;
+  background: url(../img/overlay.gif) repeat 0 0;
   background-size: 250px;
   position: fixed;
   top:0;left:0;
@@ -75,7 +75,7 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
 
 /*SECTION HOME*/
 .bg{
-  background: url(/img/cloud.gif) no-repeat left bottom / contain;
+  background: url(../img/cloud.gif) no-repeat left bottom / contain;
   background-blend-mode: hard-light;
 }
 .section{
@@ -182,7 +182,7 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
   float: left;
   width: 350px;height: 350px;
   border-radius: 50%;
-  background: url(/img/mainIMG.jpg) no-repeat left center / cover;
+  background: url(../img/mainIMG.jpg) no-repeat left center / cover;
   overflow: hidden;
 }
 .inner-wrap-text{
