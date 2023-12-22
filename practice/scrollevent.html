@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    *{margin:0;padding: 0;}
+    #scroll-div {
+      width: 100%;
+      height: 500vh;
+      background-color: black;
+    }
+  
+    #target-div {
+      position: fixed;
+      text-align: center;
+      top: 50%;
+      left: 0;
+      transform: translate(0,-50%);
+      width: 100%;
+      height: 500px;
+      line-height: 500px;
+      font-size: 120px;
+      color:white;
+    }
+  </style>
+  <script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      // 스크롤 위치값 구하기
+      var scrollTop = $(window).scrollTop();
+
+      // 투명도 계산
+      var scrollHeight = $(document).height() - $(window).height();
+      var opacity = scrollTop / scrollHeight;
+
+      // 변동적으로 투명도 변경
+      $('#target-div').css('opacity', opacity);
+    });
+  });
+
+  </script>
+</head>
+<body>
+  <div id="scroll-div">
+    <!-- 내용 -->
+  </div>
+  
+  <div id="target-div">
+    내용 입니다.
+  </div>
+</body>
+</html>
