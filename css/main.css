@@ -288,15 +288,16 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
 .skill ul li{
   float: left;
   width: 100px;height: 100px;
-  background: url(/img/skills_1.png)no-repeat center center / contain;
+  background: url(../img/skills_1.png)no-repeat center center / contain;
   border-radius: 15px;
   margin-left: 15px;
 }
-.skill ul li:nth-child(2){background: url(/img/skills_2.png)no-repeat center center / contain;}
-.skill ul li:nth-child(3){background: url(/img/skills_3.png)no-repeat center center / contain;}
-.skill ul li:nth-child(4){background: url(/img/skills_4.png)no-repeat center center / contain;}
-.skill ul li:nth-child(5){background: url(/img/photoshop.png)no-repeat center center / contain;}
-.skill ul li:last-child{background: url(/img/illustrator.png)no-repeat center center / contain;}
+.skill ul li:nth-child(2){background: url(../img/skills_2.png)no-repeat center center / contain;}
+.skill ul li:nth-child(3){background: url(../img/skills_3.png)no-repeat center center / contain;}
+.skill ul li:nth-child(4){background: url(../img/skills_4.png)no-repeat center center / contain;}
+.skill ul li:nth-child(5){background: url(../img/photoshop.png)no-repeat center center / contain;}
+.skill ul li:last-child{background: url(
+  ../img/illustrator.png)no-repeat center center / contain;}
 /*NAVIGATION*/
 #fp-nav ul li{width: 15px;height: 15px;}
 
