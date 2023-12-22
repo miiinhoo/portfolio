@@ -1,6 +1,16 @@
 $(function () { 
+  $(".copyMail").click(function () {
+    var email = $(".copyMail").text();
+    navigator.clipboard.writeText(email);
+    alert("이메일이 복사되었습니다.");
+  });
+
+  $(".copyMail").hover(function () {
+    $(".blur-active").addClass("on");
+  }, function () {
+    $(".blur-active").removeClass("on");
+  });
   //HEADER LOGO
-  
   const content = 'MINO';
   const text = document.querySelector("header h1 a");
   let i = 0;
