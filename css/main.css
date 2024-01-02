@@ -93,7 +93,7 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
   position: relative;
   top:0;left:0;
 }
-.section-inner h2{
+.section-inner>h2{
   display: flex;flex-direction: column;
   font-size: 90px;
   font-family: var(--engFont);
@@ -300,7 +300,15 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
 .inner-wrap .title{
   font-size: var(--h4tag);
   color:var(--subFontColor);
-  position: relative;top:5%;
+  float: left;
+}
+.swiper.mySlider .drag{
+  float: right;
+  line-height:40px;
+  font-size: 17px;
+  font-family: var(--mainFont);
+  color:#444;
+  font-weight: 700;
 }
 .swiper-slide .imgover{
   display: flex;
@@ -330,7 +338,7 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
   background-color: rgb(43, 196, 43, 0.98);
   color:white;
 }
-.swiper-slide .imgover .imgover_button{
+.swiper-slide .imgover .imgover_button,.swiper-slide .imgover .webPageInfo{
   float: left;
   width: auto;height: inherit;
   font-size: 17px;
@@ -343,11 +351,65 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
   transform: scale(1);
   transition: all 0.2s linear;
   filter:drop-shadow(5px 5px 5px rgb(48, 48, 48));
+  margin-left: 10px;
 }
-.swiper-slide .imgover .imgover_button:hover{
+.swiper-slide .imgover .imgover_button:hover,.swiper-slide .imgover .webPageInfo:hover{
   transform: scale(1.1);
-  transition: all 0.2s linear;
   filter: drop-shadow(7px 7px 5px rgb(10, 10, 10));
+}
+.swiper-slide .webPageInfo-textArea{
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  top:50%;left:50%;
+  transform: translate(-50%,-50%);
+  padding: 5%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease-in-out;
+}
+.swiper-slide .webPageInfo-textArea.on{
+  opacity: 1;
+  visibility: visible;
+}
+.webPageInfo-textArea h2{
+  float: left;
+  font-size: 30px;
+  font-family: var(--engFont);
+  color:#000;
+}
+.webPageInfo-textArea p{
+  float: left;
+  font-size: 18px;
+  font-family: var(--mainFont);
+  color:var(--mainFontColor);
+  line-height: 1.8;
+  margin-top:20px;
+}
+.webPageInfo-textArea .closed{
+  display: block;
+  width: 45px;height:45px;
+  position: relative;
+  float: right;
+}
+
+
+
+.webPageInfo-textArea .closed::before,.webPageInfo-textArea .closed::after{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #222;
+  position: absolute;
+  top:50%;left:50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.webPageInfo-textArea .closed::after{
+  transform: translate(-50%, -50%)rotate(135deg);
 }
 /*LAST SECTION*/
   .inner-wrap .text_box{

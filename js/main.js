@@ -51,6 +51,19 @@ $(function() {
   mySlider.autoplay.start();
     });
   
+  $('.webPageInfo').each(function() {
+  $(this).on('click', function() {
+    let textArea = $(this).closest(".swiper-slide").find('.webPageInfo-textArea');
+    textArea.addClass('on');
+  });
+  });
+  
+  $(".webPageInfo-textArea .closed").each(function () {
+    $(this).on('click', function () {
+      let close = $(this).parent();
+      close.removeClass("on")
+    })
+  })
   //SECTION 4 EMAIL COPY
   var isAnimating = false;
 $(".copyMail").click(function() {
