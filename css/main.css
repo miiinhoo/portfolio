@@ -10,7 +10,7 @@
   --subFontColor:#313DAA;
   --otherColor:#333;
   --addClassOn:#eccc14;
-  --gradientBg: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(173, 185, 214, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  --gradientBg: rgba(173, 185, 214, 1);
   --h4tag:30px;
 }
 /*OTHER*/
@@ -413,7 +413,7 @@ header p{   /*HEADER - MENU && HAMBURGER BAR SETTINGS*/
 }
 /*LAST SECTION*/
   .inner-wrap .text_box{
-    width: calc(100%-100px);
+    width: calc(100% - 100px);
     height: 50vh; 
     margin-top: 5%;
     padding: 50px;

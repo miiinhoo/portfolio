@@ -46,9 +46,9 @@ $(function() {
     speed:2000,
   });
     $('.swiper-slide').hover(function(){
-  mySlider.autoplay.stop();
-}, function(){
-  mySlider.autoplay.start();
+    mySlider.autoplay.stop();
+  }, function(){
+    mySlider.autoplay.start();
     });
   
   $('.webPageInfo').each(function() {

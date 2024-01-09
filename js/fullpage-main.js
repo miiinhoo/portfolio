@@ -13,9 +13,12 @@ $(function () {
     scrollingSpeed:700,
     lookAnchors:false,
     anchors: ['page1', 'page2', 'page3', 'page4', 'last'],
+    responsiveWidth:1024,
     'afterLoad': function (anchorLink, index) {
-      h2animation.css({'opacity':'0'})
-      switch(index) { //조건문 실행 예로, 해당 index 페이지에 도달했을 때 애니메이션 실행
+      h2animation.css({ 'opacity': '0' })
+      
+      switch (index) { //조건문 실행 예로, 해당 index 페이지에 도달했을 때 애니메이션 실행
+        
         case 1:
           addClassOn.eq(0).addClass("on").siblings().removeClass("on");
           h2animation.animate({ opacity: '1' }, 3000);
@@ -35,6 +38,7 @@ $(function () {
       }
     },
     'onLeave': function (index, nextIndex, direction) {
+
       switch (index) {
         case 1:
           if (direction === "down") {     //1번에서 2번
