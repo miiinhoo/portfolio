@@ -24,14 +24,12 @@
     .section-inner>h2{
         font-size: 60px;
     }
-    .section2-inner-imgwrapper{
-        width: 30%;
-    }
+    
     .section2-inner-imgwrapper > p{
         width: 300px;height: 300px;
     }
     .inner-wrap-text{
-        width: calc((100% - 450px) - 5px);
+        width: calc(100% - 30%);
     }
     .introduce{width: 100%;}
     .introduce p{
@@ -39,10 +37,12 @@
     }
     #section2 svg{font-size: 85px;}
 
-    .box-box{width: 220px;padding: 10px;}
-    .box-box h4,.skill h4,.inner-wrap .text_box h4,.swiper.mySlider h2{font-size: var(--h4tag1440);}
+    .box-box{width: 220px;}
+    .box-box h2,.skill h2,.other h2,.inner-wrap .text_box h2,.swiper.mySlider h2{
+        font-size: var(--h4tag1440) !important;
+    }
     .certificate{margin-top: 10px;}
-    .certificate li{font-size: 14px;height: 35px;}
+    .certificate li{font-size: 14px;height: 30px;}
 
     .inner-wrap-text .myInformation .skill{
         width: calc((80px * 3) + 15px);
@@ -56,7 +56,7 @@
         margin-top: 30px;
     }
     .myInformation .skill ul li{
-    width: 80px;height: 80px;
+    width: 60px;height: 60px;
     text-align: center;
     font-weight: bold;
     font-family: var(--mainFont);
@@ -70,10 +70,11 @@
     .swiper.mySlider .swiper-slide .imgover{
     font-size: 22px;
     }
-    .swiper.mySlider .swiper-slide .imgover .imgover_button{
-    font-size: 17px;
+    
+    .swiper.mySlider .swiper-slide .imgover .imgover-right button{
+        font-size: 16px;
+        padding: 0 18px;
     }
-
     .num-box .copyMail{font-size: 80px;}
     .text_box .num-box>span{
         font-size: 15px;
@@ -86,17 +87,26 @@
     .intro .contactIntro span,.intro .num-box-sub{
         font-size: 15px;
     }
+    div.right#fp-nav{
+        right:50px;
+    }
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1280px) {
     .section{
         height: auto !important;
     }
     .section .section-inner{
         width: 95%;
     }
-    .myInformation .skill> ul> li{
+    .myInformation{gap: 10px;}
+    .myInformation .userID{font-size: 14px;}
+    .myInformation .other > p > strong{font-size: 15px;}
+    .myInformation .skill> ul> li.off{
         width: 80px;height: 30px;
         margin-left: 5px;
+    }
+    div.right#fp-nav{
+        right:10px;
     }
 }
 @media screen and (max-width:1024px) {
@@ -129,7 +139,7 @@
     color:black;
     font-size: 17px;
     font-weight: 500;
-    transform: translate(0,0);
+    right:0;
 }
 
 .inner-wrap-text{
@@ -217,7 +227,7 @@ font-size: 17px;
     }
     #section2 .section2-inner-imgwrapper .responsiveClickEvent{
         opacity: 0;
-        transform: translate(999px,0);
+        right:999px;
     }
     .section2-inner-imgwrapper > .clickOpen{
         display: block;

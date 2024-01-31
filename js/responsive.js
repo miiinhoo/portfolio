@@ -1,4 +1,4 @@
-let max_ScreenWidth = 1200;
+let max_ScreenWidth = 1280;
 let min_ScreenWidth = 768;
 let $screenWidth1023 = 1023;
 let $screenWidth900 = 900;
@@ -6,7 +6,7 @@ let $screenWidth900 = 900;
 
 
 
-function screenWidth1200() {
+function screenWidth1280() {
   const windowWidth = window.innerWidth;
   let skillAbout = document.querySelectorAll(".skill > ul > li");
   let items = ['HTML', 'CSS', 'JS', 'Jquery', 'Photoshop', 'Illustrator'];
