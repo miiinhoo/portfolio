@@ -17,15 +17,7 @@
 /*OTHER*/
 a:hover{text-decoration: none;}
 html{scroll-behavior: smooth;}
-.overlay{
-  width: 100%;height: 100vh;
-  background: url(../img/overlay.gif) repeat 0 0;
-  background-size: 250px;
-  position: fixed;
-  top:0;left:0;
-  z-index: -1; 
-  opacity: 0.07;
-}
+
 /*HEADER*/
 header{
   display: flex;justify-content: space-around;align-items: center;
@@ -70,7 +62,11 @@ nav ul li.on{
   font-weight: 900;
 }
 
-
+.hamMenu{
+  display: none;
+  width: 30px;height: 30px;
+  background:url(../img/hamMenu.png) no-repeat center center / cover;
+}
 
 /*SECTION HOME*/
 .bg{
@@ -484,8 +480,13 @@ nav ul li.on{
   float: right;
   height: 40px;
   font-size: 18px;
+  color: var(--otherColor);
+  font-family: var(--engFont);
 }
-
+#tabMenu > li.on{
+  color:var(--subFontColor);
+  font-weight: bold;
+}
 .swiper-slide .imgover{
   display: flex;
   flex-direction: row;
@@ -540,29 +541,59 @@ nav ul li.on{
   background-color: white;
   position: absolute;
   top:50%;left:50%;
+  z-index:999;
   transform: translate(-50%,-50%);
   padding: 5%;
   opacity: 0;
-  visibility: hidden;
+  display: none;
   transition: all 0.6s ease-in-out;
 }
 .swiper-slide .webPageInfo-textArea.on{
   opacity: 1;
-  visibility: visible;
+  display: block;
 }
 .webPageInfo-textArea h2{
-  float: left;
+  display: inline-block;
   font-size: 30px;
   font-family: var(--engFont);
   color:#000;
 }
-.webPageInfo-textArea p{
-  float: left;
+.webPageInfo-textArea div{
   font-size: 18px;
   font-family: var(--mainFont);
-  color:var(--mainFontColor);
-  line-height: 1.8;
-  margin-top:20px;
+  color:var(--otherColor);
+}
+.webPageInfo-textArea > .wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;height: calc(100% - 45px);
+}
+.webPageInfo-textArea .site-information,.webPageInfo-textArea .site-information-other{
+  width: calc(50%);
+}
+.webPageInfo-textArea .site-information{
+  border-right: 1px solid rgba(128, 128, 128, 0.3);
+}
+.webPageInfo-textArea .site-information ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5%;
+}
+.webPageInfo-textArea .site-information ul li span{
+  display: inline-block;
+  text-align: center;
+}
+.webPageInfo-textArea .site-information ul li span:first-child{
+  width: calc(30%);
+  font-weight: 500;
+}
+.webPageInfo-textArea .site-information ul li span:nth-child(2){
+  width: calc(70%);
+}
+.webPageInfo-textArea .site-information-other p{
+  margin: 5% 0 0 5%;
 }
 .webPageInfo-textArea .closed{
   display: block;
@@ -605,6 +636,8 @@ nav ul li.on{
   }
   .intro{
     display: flex;
+    flex-flow: wrap;
+    gap: 20px;
     width: 100%;height: auto;
     margin-top: 60px;
   }
@@ -623,6 +656,7 @@ nav ul li.on{
     font-weight: 900;
     position: relative;
     z-index: 9999;
+    transition: all 0.8s ease-out;
   }
   .num-box .block-out{
     display: inline-block;
@@ -660,21 +694,20 @@ nav ul li.on{
     100%{transform: translateY(0);}
   }
   .num-box-sub{
-    width: 650px;
     font-size: 16px;
     font-family: var(--mainFont);
     color: var(--otherColor);
     font-weight: 500;
   }
   .num-box > span{
-    float: left;
+    float: right;
     color:var(--mainFontColor);
     font-family: var(--mainFont);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     padding-left: 30px;
     position:absolute;
-    top:60%;right: 120px;
+    top:60%;right: 0;
   }
   .num-box > span::before{
     content: "";
@@ -692,7 +725,8 @@ nav ul li.on{
     to{left:-7px;}
   }
   .contactIntro{
-    width: 500px;height: auto; 
+    display: inline-block;
+    height: auto; 
   }
   .contactIntro span{
     float: left;

@@ -56,10 +56,10 @@ $(function () {
           break;
          case 3:
           if (direction === "down") {    
-            
+            $(".webPageInfo-textArea").removeClass('on');
           }
           if(direction === "up"){     
-            
+            $(".webPageInfo-textArea").removeClass('on');
           };
           break;
          case 4:

@@ -37,6 +37,8 @@ setInterval(typing, 400);
         openPage.classList.remove('on');
       }
   }
+  
+ 
   window.addEventListener('DOMContentLoaded',function(){
     testWidth();
   });
@@ -58,18 +60,25 @@ setInterval(typing, 400);
   const mySlider = new Swiper(".swiper.mySlider", {
     centeredSlides: true,
     loop: true,
-    effect: 'cube',
+    effect: 'fade',
+    navigation:{
+      nextEl:'.swiper1024-next',
+      prevEl:'.swiper1024-prev',
+    },
     autoplay: {
-      delay: 2000,
+      delay: 5000999,
       disableOnInteraction:true,
     },
-    speed:2000,
+    speed:700,
+    initialSlide: 0
   });
-    $('.swiper-slide').hover(function(){
+  
+  $('.swiper-slide').hover(function(){
     mySlider.autoplay.stop();
   }, function(){
     mySlider.autoplay.start();
-    });
+  });
+
   
   $('.webPageInfo').each(function() {
   $(this).on('click', function() {
@@ -81,17 +90,36 @@ setInterval(typing, 400);
   $(".webPageInfo-textArea .closed").each(function () {
     $(this).on('click', function () {
       let close = $(this).parent();
-      close.removeClass("on")
+      close.removeClass("on");
     })
-  })
+  });
+  
+$('.mySlider .swiper-wrapper.clone').addClass('on');
+$('.mySlider .swiper-wrapper.project').removeClass('on');
+
+
+  // li 클릭 이벤트 핸들러
+  $('#tabMenu > li').click(function() {
+    let swiperIndex = $(this).index();
+    $(this).addClass('on').siblings().removeClass('on');
+    $('.swiper-wrapper').removeClass('on');
+    $('.swiper-wrapper').eq(swiperIndex).addClass('on');
+
+    const selectedMenu = $(this).index();
+    const newTitle = selectedMenu === 0 ? 'CLONE CODING' : 'PROJECT';
+    $('.swiper.mySlider > h2.title').html(newTitle);
+  });
+
+
+
   //이메일복사
-  var isAnimating = false;
+  let isAnimating = false;
 $(".copyMail").click(function() {
   if (!isAnimating) {
     isAnimating = true;
-    var email = $(".copyMail").text();
+    let email = $(".copyMail").text();
     navigator.clipboard.writeText(email);
-    var blockOut = $(".block-out");
+    let blockOut = $(".block-out");
     blockOut.animate({
       'opacity': '1'
     }, 1000, function() {

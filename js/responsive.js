@@ -25,8 +25,8 @@ function screenWidth1280() {
 
 function screenWidth1023() {
   const windowWidth = window.innerWidth;
-  let setSvg = document.querySelectorAll("svg.text-line text");
-  
+  const setSvg = document.querySelectorAll("svg.text-line text");
+
   if(windowWidth < $screenWidth1023){
     setSvg[1].setAttribute('y','160');
   }else{
@@ -50,12 +50,12 @@ function screenWidth768() {
 };
 
 window.addEventListener("DOMContentLoaded", function() {
-  screenWidth1200();
+  screenWidth1280();
   screenWidth1023();
   screenWidth768();
 });
   window.addEventListener("resize", function() {
-    screenWidth1200();
+    screenWidth1280();
     screenWidth1023();
     screenWidth768();
 });

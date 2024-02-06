@@ -46,7 +46,6 @@
   
 </head>
 <body>
-  <div class="overlay"></div>
   <div class="cursorPointer"></div>
   <header class="header">
     <h1><a href="#page1"><span class="blind">JS제목</span></a></h1>
@@ -59,7 +58,7 @@
           <li><a href="#page4">CONTACT</a></li>
         </ul>
     </nav>
-
+    <p class="hamMenu"><span class="blind">햄버거메뉴</span></p>
   </header>
   <main id="fullpage">
     <section class="section active bg" id="section1">
@@ -173,16 +172,19 @@
       </div>
     </section>
     <section class="section" id="section3">
+      
       <div class="section-inner">
         <div class="inner-wrap">
           <div class="swiper mySlider">
             <h2 class="title">CLONE CODING</h2>
             <ul id="tabMenu">
-              <li>menu1</li>
-              <li>menu2</li>
+              <li class="on">CLONE</li>
+              <li>PROJECT</li>
             </ul>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+                
+                <div class="swiper1024-prev"></div>
+            <div class="swiper-wrapper clone">
+              <div class="swiper-slide active">
                 <div class="slide_img">
                   <img src="img/vonincopy.png" alt="vonin">
                 </div>
@@ -196,10 +198,20 @@
                   <div class="webPageInfo-textArea VONIN">
                     <h2>VONIN</h2>
                     <button class="closed"><span class="blind">close</span></button>
-                    <p>이 홈페이지는 국비학원에서 처음으로 제작해본 클론코딩사이트 입니다.
-                       HTML, CSS를 사용해서 만든 가장 기초적인 클론코딩을 했으며, 이 클론코딩으로 인해
-                       웹퍼블리셔에 흥미를 붙이는 계기가 되었습니다.
-                    </p>
+                    <div class="wrap">
+                    <div class="site-information">
+                      <ul>
+                        <li><span>TYPE</span><span>적응형</span></li>
+                        <li><span>TOOLS</span><span>HTML,CSS</span></li>
+                        <li><span>제작기간</span><span>5일</span></li>
+                      </ul>
+                    </div>
+                    <div class="site-information-other">
+                      <p>국비학원에서 HTML과 CSS를 처음 배웠을때 만들어본 클론코딩사이트입니다.
+                        퍼블리싱의 기초적인 베이스를 잡는 틀을 배웠을 때이며,
+                        퍼블리싱에 흥미를 붙이는데 의의를 뒀습니다.</p>
+                    </div>
+                    </div>
                   </div>
               </div>
               <div class="swiper-slide">
@@ -216,10 +228,23 @@
                   <div class="webPageInfo-textArea MLB">
                     <h2>MLB</h2>
                     <button class="closed"><span class="blind">close</span></button>
-                    <p>대중적이고 효과가 많은 웹사이트를 골라봤으며, CSS로 :hover 이벤트, display:flex에
-                      관한것을 배우고 JS와 JQUERY로 스크롤 이벤트 클릭이벤트로 제어할 수 있다는 것을 깨닫고
-                      JS와 JQUERY를 파고들기 시작했던 사이트였습니다.
-                    </p>
+                    <div class="wrap">
+                    <div class="site-information">
+                      <ul>
+                        <li><span>TYPE</span><span>적응형</span></li>
+                        <li><span>TOOLS</span><span>HTML,CSS,JS,JQUERY</span></li>
+                        <li><span>EVENT</span><span>스크롤이벤트,CSS효과</span></li>
+                        <li><span>제작기간</span><span>7일</span></li>
+                      </ul>
+                    </div>
+                    <div class="site-information-other">
+                      <p>대중적인 패션브랜드 MLB의 클론코딩사이트를 만든것입니다,
+                        if else 문을 사용해 스크롤이벤트를 구현하였습니다.
+                        <br>js와 jquery에 첫발을 내딛었던 시점이고,
+                        부족하다 느끼는 부분엔 독학으로도 배워나갔습니다.
+                        </p>
+                    </div>
+                  </div>
                   </div>
               </div>
               <div class="swiper-slide">
@@ -236,15 +261,35 @@
                 <div class="webPageInfo-textArea HAPPY">
                     <h2>HAPPYMONEY INC</h2>
                     <button class="closed"><span class="blind">close</span></button>
-                    <p>많은 사이트들을 찾아보며 공통적으로 많이 쓰이던 것을 발견하여,
-                       스크롤을 할때마다 한 페이지씩 이동하는 것이 궁금해 서칭을 통해 
-                       FULLPAGE CDN이 있다는것을 보고 시도를했고, FULLPAGE에 대한 JS 옵션을 
-                       적용해봤습니다. 그 결과, JS와 JQUERY의 이해도를 한층 더 높여갔고 
-                       더 많은것을 시도해볼 수 있는 자신감을 얻었습니다.
-                    </p>
+                    <div class="wrap">
+                    <div class="site-information">
+                      <ul>
+                        <li><span>TYPE</span><span>풀페이지 반응형</span></li>
+                        <li><span>TOOLS</span><span>HTML,CSS,JS,JQUERY</span></li>
+                        <li><span>EVENT</span><span>풀페이지이벤트,그외효과</span></li>
+                        <li><span>CDN</span><span>Fullpage.Js,Swiper.Js</span></li>
+                        <li><span>제작기간</span><span>2주</span></li>
+                      </ul>
+                    </div>
+                    <div class="site-information-other">
+                      <p>풀페이지로 만들어진 사이트를 보고,
+                      만들어본 클론코딩사이트 입니다.
+                      <br>풀페이지에 꽂혀 웹사이트를 검색해가면서
+                      사용법을 익혔습니다.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-wrapper project">
+              <div class="swiper-slide">
+                <div class="slide_img menu">
+                  <img src="img/pfmain.jpg" alt="project-a">
+                </div>
+              </div>
+            </div>
+            <div class="swiper1024-next"></div>
           </div>
         </div>
       </div>
@@ -266,7 +311,7 @@
               </div>
               <div class="intro">
               <p class="contactIntro clear">
-                <span>안녕하세요! 화려하게 만들 생각보다는 커뮤니케이션과 협업을 중시하고,</span>
+                <span>안녕하세요! 화려하게 만들 생각보다는 커뮤니케이션과 협업을 중시하고,</span><br>
                 <span>사용자의 편의성을 생각하는 웹퍼블리셔가 되겠습니다.</span>
               </p>
               <p class="num-box-sub">
