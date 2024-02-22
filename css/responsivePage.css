@@ -1,0 +1,322 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap');
+
+
+
+:root{
+    --h4tag1440:27px;
+    --mainFont: 'Noto Sans KR', sans-serif;
+}
+@media screen and (max-width:1440px) {
+    header h1{
+        height:38px;
+    }
+    header h1 a{
+        font-size: 38px;
+    }
+    nav ul li{
+        font-size: 18px;
+    }
+    .section-inner{
+        width: 90%;
+    }
+    .section-inner>h2{
+        font-size: 60px;
+    }
+    
+    .section2-inner-imgwrapper > p{
+        width: 300px;height: 300px;
+    }
+    .inner-wrap-text{
+        width: calc(100% - 30%);
+    }
+    .introduce{width: 100%;}
+    .introduce p{
+        font-size: 17px;
+    }
+    #section2 svg{font-size: 85px;}
+
+    .box-box{width: 220px;}
+    .box-box h2,.skill h2,.other h2,.inner-wrap .text_box h2,.swiper.mySlider h2{
+        font-size: var(--h4tag1440) !important;
+    }
+    .certificate{margin-top: 10px;}
+    .certificate li{font-size: 14px;height: 30px;}
+
+    .inner-wrap-text .myInformation .skill{
+        width: calc((80px * 3) + 15px);
+        margin-left:  20px;
+    }
+    .skill ul{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .myInformation{
+        margin-top: 30px;
+    }
+    .myInformation .skill ul li{
+    width: 60px;height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--mainFont);
+    font-size: 15px;
+    color:#222;
+    margin-left: 5px;
+    }
+
+    .swiper.mySlider{height: 60vh;}
+    .swiper.mySlider .swiper-wrapper{height: calc(60vh - 100px);}
+    .swiper.mySlider .swiper-slide .imgover{
+    font-size: 22px;
+    }
+    
+    .swiper.mySlider .swiper-slide .imgover .imgover-right button{
+        font-size: 16px;
+        padding: 0 18px;
+    }
+    .webPageInfo-textArea div.wrap div{
+        font-size: 17px;
+      }
+    .text_box .num-box .copyMail{font-size: 80px;}
+    .text_box .num-box>span{
+        font-size: 15px;
+    }
+    .text_box .num-box>span::before{
+        width: 17px;height: 17px;
+        background-size: 17px;
+    }
+    
+    .intro .contactIntro span,.intro .num-box-sub{
+        font-size: 15px;
+    }
+    div.right#fp-nav{
+        right:50px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .section{
+        height: auto !important;
+    }
+    .section .section-inner{
+        width: 95%;
+    }
+    .myInformation{gap: 10px;}
+    .myInformation .userID{font-size: 14px;}
+    .myInformation .other > p > strong{font-size: 15px;}
+    .myInformation .skill> ul> li.off{
+        width: 80px;height: 30px;
+        margin-left: 5px;
+    }
+    .webPageInfo-textArea div.wrap div{
+        font-size: 15px;
+      }
+    .text_box .num-box>span{
+        font-size: 14px;
+        padding-left: 15px;
+    }
+      .intro .contactIntro span,.intro .num-box-sub{
+        font-size: 14px;
+    }
+    div.right#fp-nav{
+        right:10px;
+    }
+}
+@media screen and (max-width:1024px) {
+::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #222;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #111;
+}
+.section-inner>h2{
+    font-size: 50px;
+}
+.inner-wrap .section2-inner-imgwrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;height: 500px;
+    margin-top: 0;
+}
+.section2-inner-imgwrapper .responsiveClickEvent{
+    opacity: 1;
+    font-family: 'Gowun Dodum', sans-serif;
+    color:black;
+    font-size: 17px;
+    font-weight: 500;
+    right:0;
+}
+
+.inner-wrap-text{
+    width:100%;
+}
+.introduce{
+    width: 100%;
+    margin-top: 0;
+}
+.introduce p{
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+#section2 svg{font-size: 80px;line-height: 5px;}
+.section-inner .inner-wrap{
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 0;
+}
+.inner-wrap.before::before,
+.inner-wrap.before::after{
+    display: none;
+}
+.box-box{width: 220px;padding: 10px;}
+.box-box h2,.skill h2,.inner-wrap .text_box h2,.swiper.mySlider h2,.window1023 h2{font-size: var(--h4tag1440);}
+.certificate{margin-top: 10px;}
+.certificate li{font-size: 14px;height: 35px;}
+.inner-wrap-text .myInformation .skill{
+    width: calc((80px * 3) + 15px);
+    padding: 10px;
+    margin-left:  5%;
+}
+.skill ul{
+    display: flex;
+    flex-flow: wrap;
+}
+.myInformation{display: none;}
+.myInformation .skill> ul> li{
+width: 80px;height: 30px;
+margin-left: 5px;
+}
+.window1023{display: block;}
+.swiper.mySlider{width: 80%;height: 60vh;}
+.swiper.mySlider .swiper-wrapper{height: calc(60vh - 100px);}
+.swiper.mySlider .swiper-slide .imgover{
+font-size: 21px;
+}
+.swiper.mySlider .swiper-slide .imgover .imgover-right button{
+font-size: 15px;
+padding: 0 15px;
+}
+.webPageInfo-textArea div.wrap div{
+    font-size: 14px;
+  }
+.text_box .num-box .copyMail{font-size: 70px;}
+.text_box .num-box>span{
+    display: none;
+}
+.text_box .num-box>span::before{
+    width: 17px;height: 17px;
+    background-size: 17px;
+}
+.text_box .intro{
+    flex-flow: unset;
+    flex-direction: column;
+}
+.intro .contactIntro span,.intro .num-box-sub{
+    font-size: 15px;
+}
+
+}
+
+    
+@media screen  and (max-width:768px) {
+    header{
+        justify-content: space-between;
+        width: 90%;
+        padding: 0 5%;
+    }
+    header h1{
+        height:35px;
+    }
+    header h1 a{
+        font-size: 35px;
+    }
+    nav{
+        display: none;
+    }
+    nav ul li{
+        font-size: 18px;
+    }
+    .hamMenu{
+        display: block;
+    }
+    .section-inner > h2{
+        width: 100%;
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    .section2-inner-imgwrapper > p{
+        width: 280px;height: 280px;
+    }
+    #section2 .section2-inner-imgwrapper .responsiveClickEvent{
+        opacity: 0;
+        right:999px;
+    }
+    .section2-inner-imgwrapper > .clickOpen{
+        display: block;
+    }
+    .inner-wrap-text{
+        width: 100%;
+    }
+    .introduce{width: 100%;}
+    .introduce p{
+        width: 100%;
+        font-size: 15px;
+    }
+    #section2 svg{font-size: 70px;}
+
+    .box-box{width: 220px;padding: 10px;}
+    .box-box h4,.skill h4,.inner-wrap .text_box h4,.swiper.mySlider h2{font-size: var(--h4tag1440);}
+    .certificate{margin-top: 10px;}
+    .certificate li{font-size: 14px;height: 35px;}
+
+    .inner-wrap-text .myInformation .skill{
+        width: calc((80px * 3) + 15px);
+        padding: 10px;
+        margin-left:  5%;
+    }
+    .skill ul{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .myInformation .skill ul li{
+    width: 80px;height: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--mainFont);
+    font-size: 15px;
+    color:#222;
+    margin-left: 5px;
+    }
+
+    .swiper.mySlider{height: 60vh;}
+    .swiper.mySlider .swiper-wrapper{height: calc(60vh - 100px);}
+    .swiper.mySlider .swiper-slide .imgover{
+    font-size: 20px;
+    }
+    .swiper.mySlider .swiper-slide .imgover .imgover-right button{
+    font-size: 14px;
+    }
+
+    .text_box .num-box .copyMail{font-size: 55px;}
+    .text_box .num-box>span{
+        font-size: 15px;
+        right:30px;
+    }
+    .text_box .num-box>span::before{
+        width: 17px;height: 17px;
+        background-size: 17px;
+    }
+    .intro .contactIntro span,.intro .num-box-sub{
+        font-size: 15px;
+    }
+}
