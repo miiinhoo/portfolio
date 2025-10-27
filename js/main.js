@@ -50,7 +50,7 @@ setInterval(typing, 400);
       window.open('https://miiinhoo.github.io/vonin/', '_blank');
     });
     $(".imgover_button.MLB").click(function () {
-      window.open('http://minhohome.dothome.co.kr/', '_blank');
+      window.open('https://miiinhoo.github.io/MLBCopySite/', '_blank');
     });
     $(".imgover_button.HAPPY").click(function () { 
       window.open('http://minho1.dothome.co.kr/', '_blank');
@@ -141,4 +141,5 @@ $(".copyMail").click(function() {
   }
 });
 });
+
 
